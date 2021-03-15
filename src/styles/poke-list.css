@@ -1,0 +1,135 @@
+body {
+  background-image: url(https://cutewallpaper.org/21/pokemon-pattern-background/Pokemon-discovered-by-Blurrydelf-on-We-Heart-It.png);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Courier New";
+  position: relative;
+}
+
+.selector__container {
+  position: absolute;
+  background-color: #ffee66;
+  border-radius: 10px;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-type {
+  font-family: "Courier New";
+  padding: 3px 7px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin: 6px;
+  font-size: 20px;
+}
+.btn-type:hover {
+  opacity: 0.9;
+}
+
+#pokelista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.poke-div {
+  color: white;
+  background-color: rgb(0, 255, 179);
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none; /* no underline */
+}
+
+.btn-nav,
+.btn-jump,
+input {
+  margin: 50px;
+  box-shadow: 1px 4px 0px 0px #000000;
+  background: linear-gradient(to bottom, #ffe666 5%, #ffab23 100%);
+  background-color: #ffe666;
+  border-radius: 34px;
+  border: 4px solid #246dff;
+  display: inline-block;
+  cursor: pointer;
+  color: #1168eb;
+  font-family: "Courier New";
+  font-size: 21px;
+  font-weight: bold;
+  padding: 9px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  outline: none;
+}
+.btn-jump {
+  font-size: 15px;
+  margin: 0px;
+}
+input {
+  width: 100px;
+  margin: 10px;
+}
+button:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffe666 100%);
+  background-color: #ffab23;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.img-float {
+  transform: translatey(0px);
+  animation: float 1s ease-in-out infinite;
+}
+
+.button__container,
+.jump__container,
+.sort__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.jump__container p,
+.sort__container p {
+  border-radius: 5px;
+  background-color: #f0d135;
+  color: #1168eb;
+  padding: 5px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

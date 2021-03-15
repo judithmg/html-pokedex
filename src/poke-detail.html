@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUDITH'S POKÉDEX</title>
+    <link rel="stylesheet" href="./styles/shared.css" />
+
+    <link rel="shortcut icon" href="./public/pika.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/poke-detail.css" />
+  </head>
+  <body>
+    <main>
+      <img src="./public/pokejudith.png" alt="" />
+      <section>
+        <div class="pokedex">
+          <div class="left-container">
+            <div class="left-container__top-section">
+              <a href="./index.html">
+                <div class="top-section__blue"></div>
+              </a>
+              <div class="top-section__small-buttons">
+                <div class="top-section__red"></div>
+                <div class="top-section__yellow"></div>
+                <div class="top-section__green"></div>
+              </div>
+            </div>
+            <div class="left-container__main-section-container">
+              <div class="left-container__main-section">
+                <div class="main-section__white">
+                  <div class="main-section__black">
+                    <div class="screen__header"></div>
+                    <div class="screen__image"></div>
+                    <div class="screen__description"></div>
+                  </div>
+                </div>
+                <div class="left-container__controllers">
+                  <div class="controllers__d-pad">
+                    <div class="d-pad__cell top"></div>
+                    <div class="d-pad__cell left" onclick="prevPokemon()"></div>
+                    <div class="d-pad__cell middle"></div>
+                    <div
+                      class="d-pad__cell right"
+                      onclick="nextPokemon()"
+                    ></div>
+                    <div class="d-pad__cell bottom"></div>
+                  </div>
+                  <div class="controllers__buttons">
+                    <div class="buttons__button">B</div>
+                    <div class="buttons__button">A</div>
+                  </div>
+                </div>
+              </div>
+              <div class="left-container__right">
+                <div class="left-container__hinge"></div>
+                <div class="left-container__hinge"></div>
+              </div>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="right-container__black">
+              <div class="right-container__screen"></div>
+            </div>
+            <div class="right-container__buttons">
+              <button class="left-button">
+                <a href="" class="prev-link"> Prev </a>
+              </button>
+              <button class="right-button">
+                <a href="" class="next-link"> Next </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./scripts/moves.js"></script>
+    <script src="./scripts/poke-detail.js"></script>
+  </body>
+</html>
